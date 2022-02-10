@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="63dp"
+            android:layout_height="63dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_roomView_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#353935"
+                android:scaleType="centerCrop"
+                android:src="@drawable/my_photo"
+                app:shapeAppearanceOverlay="@style/circle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right">
+
+                <LinearLayout
+                    android:id="@+id/is_online"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/shape_circle_green"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_roomView_fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:maxLines="2"
+            android:gravity="center_horizontal"
+            android:maxWidth="80dp"
+            android:text="Jigarlar"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
